@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Начальная страница</title>
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p align="center">Это начальная страница</p>
+    <header class="container__fluid">
+        <div class="container d-flex">
+            <img class="logo" src="images/main/sett.jpg" alt="Logo">
+            <nav class="menu">
+                <a class="active" href="#">Каталог</a>
+                <a href="#">О нас</a>
+                <a href="#">Оплата и доставка</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <form name="search" action="#" method="get">
+                <div class="d-flex">
+                    <input type="text" name="search" placeholder="Поиск по каталогу">
+                    <input type="submit" name="search" value="">
+                </div>
+            </form>
+            <div class="cart d-flex">
+                <img class="cart__icon" src="images/main/carts_icon.png" alt="cart">
+                <div>
+                    <p>1000 руб</p>
+                    <a href="#">Оформить заказ</a>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
